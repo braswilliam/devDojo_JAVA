@@ -9,8 +9,8 @@ public class Aula04Operadores {
         int n1 = 10;
         int n2 = 20;
 
-        int soma  =  n1 + n2;
-        double divisao =  n1 / (double) n2;
+        int soma = n1 + n2;
+        double divisao = n1 / (double) n2;
         System.out.println("soma  = " + soma);
         System.out.println("divisão = " + divisao);
 
@@ -38,7 +38,36 @@ public class Aula04Operadores {
         System.out.println(isDentroDaLeiMaiorQueTrinta);
         System.out.println(isDentroDaLeiMenorQueTrinta);
 
+        //|| or
+        double valorTotalContaCorrente = 200;
+        double valorTotalContaPoupanca = 10000;
+        float valorPlaystation = 5000F;
+        boolean isPlaystatioCincoCompravel = valorTotalContaCorrente > valorPlaystation || valorTotalContaPoupanca > valorPlaystation;
+        System.out.println(isPlaystatioCincoCompravel);
 
+        //= += -= *= /= %=
+        double bonus = 1800;
+        //bonus = bonus + 1000;
+        bonus += 1000; //2800.0
+        bonus -= 1000; //1800.0
+        bonus *= 2; //3600.0
+        bonus /= 2; // 1800.0
+        System.out.println(bonus);
+
+
+        //unários: ++ , --
+
+        int cont = 0;
+        cont += 1;
+        cont++;
+        cont--;
+        ++cont;
+        --cont;
+
+        int contador2 = 0;
+        System.out.println(cont);
+        System.out.println(contador2++); //imprime e depois incrementa.
+        System.out.println(contador2); //imprime o que foi incrementado.
 
 
     }
